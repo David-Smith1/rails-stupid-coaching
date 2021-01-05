@@ -1,4 +1,23 @@
-<form action="answer">
-  <input type="text" name="question">
-  <input type="submit" value="Ask!">
-</form>
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RailsStupidCoaching</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class="container">
+      <form action="answer">
+        <input type="text" name="question">
+        <input type="submit" value="Ask!">
+      </form>
+    </div>
+  </body>
+</html>
+
